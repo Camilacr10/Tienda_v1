@@ -1,2 +1,2 @@
 # Tienda_v1
- TiendaJ
+ Tienda_Jueves
