@@ -2,11 +2,13 @@
       xmlns:th="http://www.thymeleaf.org"> 
 
     <head th:replace= "~{layout/plantilla :: head}">
-        <title>TechShop</title>
+        <title>Rainbow World</title>
     </head>
     <body>
+         <img src="https://es.m.wikipedia.org/wiki/D%C3%B3berman#/media/Archivo%3ADobermann_Father-and-son.jpg" width="200px" height="200px" alt="...">
+            
         <header th:replace= "~{layout/plantilla :: header}"/>
-
-        <footer th:replace= "~{layout/plantilla :: footer}"/>
+         <section th:replace="~{layout/plantilla  :: imagen}"></section>
+          <footer th:replace= "~{layout/plantilla :: footer}"/>
     </body>
 </html>
