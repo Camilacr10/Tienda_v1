@@ -11,11 +11,8 @@
         <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>        
     </head>
     <body>
-        
-        <section th:fragment="imagen">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tooltyp.com%2F8-beneficios-de-usar-imagenes-en-nuestros-sitios-web%2F&psig=AOvVaw1XzgVrIRMaPzxczZLWVt-W&ust=1708744437459000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMiGvZu_wIQDFQAAAAAdAAAAABAE" width="200px" height="200px" class="d-block w-100" alt="...">
-                    
-        </section>
+
+
         <img src="image (23).png" alt=""/>
         <header th:fragment="header" class="header" >
 
@@ -36,21 +33,73 @@
                             <a href="#" style="color: white;margin-top:10px;"><span style="margin-top: 20px; margin-right: 20px; margin-left: 15px; font-size: 20px;"><i class="fa fa-shopping-cart "></i></span>
                             </a>
                             <a href="#" style="color: white;margin-top:10px;"><span style="font-size: 20px;"><i class="fas fa-user-circle "></i></span></a>
-                            
+
                         </div>
                     </div>
                 </div>
             </nav>
+        </header>
+
+            <section th:fragment="frase" class="frase">
+                <div class="container-fluid" style=" display: flex; justify-content: center; align-items: center; ">
+                <div style="width: 400px; padding-top: 50px; text-align: center; ">  <p> <i class="fas fa-quote-left" style="padding-right: 30px;"></i>Un lugar donde la magia del universo del anime se fusiona 
+                        con la emoción de los cómics, la innovación de la tecnología, la comodidad del hogar y el 
+                        encanto de la belleza, creando un espacio donde tus pasiones cobran vida y 
+                        cada producto cuenta una historia que te invita a explorar, soñar y encontrar 
+                        tu lugar en este universo de posibilidades.<i class="fas fa-quote-right" style="padding-left: 30px;" ></i></p>
+                </div>
+            </div>
+            </section>
+        
+        <section th:fragment="titulo" class="titulo">
+              <h3 style="padding-left: 30px;">Nuestros Productos</h3> <hr style="margin-top: -20px; margin-left: 300px;">
+
+        </section>
+        
+        <section style="height: 100px;" th:fragment="productos" class="productos" >
+            <div class="card" style="width: 13rem; margin-left: 60px; float:left; ">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tooltyp.com%2F8-beneficios-de-usar-imagenes-en-nuestros-sitios-web%2F&psig=AOvVaw0lZbJ1bvUvXMVkYrrPFbVy&ust=1709006692772000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDe2ZiQyIQDFQAAAAAdAAAAABAE" class="card-img-top" alt="...">
+                <div class="card-body" >
+                    <h5 class="card-title" style="text-align: center; ">Tecnologia</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body" >
+                    <h5 class="card-title" style="text-align: center; ">Comics</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body" >
+                    <h5 class="card-title" style="text-align: center; ">Belleza</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body" >
+                    <h5 class="card-title" style="text-align: center; ">Hogar</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 13rem; margin-left: 30px;  float:left;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body" >
+                    <h5 class="card-title" style="text-align: center; ">Anime</h5>
+                </div>
+            </div>
             
-             
+        </section>
+            
+        
+
             <footer th:fragment="footer" style="background-color: rgba(39, 15, 59); height:56px; ">
                 <div class="container">
                     <div class="col">
                         <p style="color: white;">
                             &COPY [[#{plantilla.derechos}]]
-                            <i class="fab fa-instagram" style="font-size: 35px; padding-left: 670px;"></i>
-                            <i class="fab fa-facebook" style="font-size: 35px; padding-left:15px; "></i>
-                            <i class="fab fa-twitter" style="font-size: 35px; padding-left:15px;"></i>
+                            <i class="fab fa-instagram" style="font-size: 35px; padding-left: 670px; padding-top: 5px;"></i>
+                            <i class="fab fa-facebook" style="font-size: 35px; padding-left:15px; padding-top: 5px;"></i>
+                            <i class="fab fa-twitter" style="font-size: 35px; padding-left:15px; padding-top: 5px;"></i>
 
                         </p>
 
